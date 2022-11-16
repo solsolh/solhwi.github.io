@@ -8,7 +8,7 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
 #wrap {width: 100%;height: 100vh; background: #333}
 .inner {
     background: #333333;
-    width: 1600px;
+    width: 1450px;
     height: 100%;
     margin: 0 auto;
 }
@@ -27,7 +27,7 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     justify-content: space-between;
     align-items:center;
     flex-flow: row nowrap;
-    width: 1600px;
+    width: 1450px;
     height: 100%;
     margin: auto;
 }
@@ -102,8 +102,45 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     transform: translate(-50%,-50%);
     background: #fff;
     width: 0.1rem;
-    height: 5rem;
+    height: 4.5rem;
 }
+/*scroll-bk*/
+.scroll-main.bk {
+    position: absolute; bottom: 8%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 3rem;
+    border: 3px solid #333;
+    border-radius: 20px;
+}
+.scroll-ball.bk {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 6px;
+    background: #333;
+}
+.scroll-text.bk {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+}
+
+.scroll-line.bk {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #333;
+    width: 0.1rem;
+    height: 4.5rem;
+}
+
+
 
 /*타이핑 효과*/
 .typing-txt{display: none;}
@@ -127,15 +164,62 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
 #aboutMe > .inner {
     background: #F9F9F9;
 }
+.about-cont {
+    width: 100%;
+    height: 60rem;
+    padding: 14rem 0rem;
+}
 
-
-
-
-
-
-
-
-
-
-
+.left-title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 32px;
+}
+.about-visual {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-img {
+    margin: 7rem 0;
+    width: 350px;
+    height: 450px;
+}
+.about-img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.1);
+}
+.about-box {
+    width: 900px;
+    margin: 7rem 0;
+}
+.about-title {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.about-box > .about-text {
+    margin: 1rem 1rem;
+    word-break: break-word;
+    line-height: 1.8;
+}
+.about-box > .about-text > span {
+    padding-top: 2rem;
+    display: inline-block;
+}
+.about-skills > ul {
+    margin: 0.5rem 1rem;
+}
+.skill-box {
+    margin-bottom: 1.4rem;
+}
+.skill-name {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+.skill-list {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
 
