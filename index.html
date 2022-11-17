@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
     <title>신입 프론트 엔드 개발자의 포르폴리오 입니다.</title>
 </head>
 <body>
@@ -15,8 +18,8 @@
             <nav id="nav">
                 <ul class="nav-menu">
                     <li class="menu"><a href="#">Main</a></li>
-                    <li class="menu"><a href="#">About Me</a></li>
-                    <li class="menu"><a href="#">Works</a></li>
+                    <li class="menu"><a href="#aboutMe">About Me</a></li>
+                    <li class="menu"><a href="#projects">Projects</a></li>
                     <li class="menu"><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -47,9 +50,12 @@
             <div class="right-img">
                 <div class="light-img">
                     <img src="img/🦆%20icon%20_idea%20bulb%20glow_.png" alt=""></div>
-                <ul class="cloud-img">
-                    <li><img src="img/vector.png" alt=""></li>
-                </ul>
+                <span class="cloud-img01">
+                    <img src="img/🦆%20icon%20_cloud_.png" alt="">
+                </span>
+                <span class="cloud-img02">
+                    <img src="img/🦆%20icon%20_clouds_.png" alt="">
+                </span>
             </div>
         </div>
             <div class="scroll-main"><div class="scroll-ball"></div></div>
@@ -103,9 +109,39 @@
         <div class="scroll-text bk">Scroll</div>
         <div class="scroll-line bk"></div>
     </section>
+    <!--//aboutMe 끝-->
+
+    <section id="projects">
+        <div class="inner">
+            <div class="pro-cont">
+                <h2 class="left-title">projects <span>Front-end Develop</span></h2>
+                <div class="pro-visual">
+                    <div class="swiper pro-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide pro-box">Slide 1</div>
+                            <div class="swiper-slide pro-box">Slide 2</div>
+                            <div class="swiper-slide pro-box">Slide 3</div>
+                            <div class="swiper-slide pro-box"><span class="pro-info">개발중 입니다.</span></div>
+                            <div class="swiper-slide pro-box"><span class="pro-info">개발중 입니다.</span></div>
+                            <div class="swiper-slide pro-box"><span class="pro-info">개발중 입니다.</span></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next btn-next"></div>
+                    <div class="swiper-button-prev btn-prev"></div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="scroll-main bk"><div class="scroll-ball bk"></div></div>
+        <div class="scroll-text bk">Scroll</div>
+        <div class="scroll-line bk"></div>
+    </section>
 
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
