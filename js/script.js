@@ -1,3 +1,16 @@
+//메뉴 스크롤 js
+const header = document.querySelector('#header');
+const headerHeight = header.getBoundingClientRect().height;
+
+document.addEventListener('scroll', () => {
+    if (window.scrollY > headerHeight) {
+        header.classList.add('active');
+    } else {
+        header.classList.remove('active');
+    }
+});
+
+//타이핑
 var typingBool = false;
 var typingIdx=0;
 var liIndex = 0;
@@ -65,6 +78,8 @@ function typing(){
     }
 };
 
+
+//swiper js
 var swiper = new Swiper(".pro-slide", {
     slidesPerView: 3,
     spaceBetween: 40,
@@ -80,3 +95,4 @@ var swiper = new Swiper(".pro-slide", {
         prevEl: ".swiper-button-prev",
     },
 });
+

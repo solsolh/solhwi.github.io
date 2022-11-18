@@ -8,7 +8,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.smooth-scroll.min.js"></script>
-    <title>신입 프론트 엔드 개발자의 포르폴리오 입니다.</title>
+    <title>신입 프론트엔드 개발자의 포르폴리오 입니다.</title>
 </head>
 <body>
 <div id="wrap">
@@ -20,7 +20,7 @@
                     <li class="menu"><a href="#">Main</a></li>
                     <li class="menu"><a href="#aboutMe">About Me</a></li>
                     <li class="menu"><a href="#projects">Projects</a></li>
-                    <li class="menu"><a href="#">Contact</a></li>
+                    <li class="menu"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,7 +28,7 @@
     <!--//header 끝-->
 
     <section id="main">
-        <div class="inner">
+        <div class="main-inner">
             <div class="main-cont">
                 <div class="main-title typing-txt">
                     <ul>
@@ -58,18 +58,18 @@
                 </span>
             </div>
         </div>
-            <div class="scroll-main"><div class="scroll-ball"></div></div>
-            <div class="scroll-text">Scroll</div>
-            <div class="scroll-line"></div>
+            <div class="scroll-main wh"><div class="scroll-ball wh"></div></div>
+            <div class="scroll-text wh">Scroll</div>
+            <div class="scroll-line wh"></div>
     </section>
     <!--//main 끝-->
 
     <section id="aboutMe">
         <div class="inner">
-            <div class="about-cont">
+            <div class="contents">
                 <h2 class="left-title">About Me</h2>
                 <div class="about-visual">
-                    <div class="about-img"><img src="img/profile.jpg" alt=""></div>
+                    <div class="about-img"><img src="" alt=""></div>
                     <div class="about-box">
                         <h3 class="about-title">“끊임없이 변화하는 개발자 김솔휘 입니다! “</h3>
                         <p class="about-text">머릿속 기획을 상상에 그치지 않고 현실로 이뤄내기 위해 프론트 엔드 개발자의 길을 걷기로 결심했습니다. <br>
@@ -113,24 +113,21 @@
 
     <section id="projects">
         <div class="inner">
-            <div class="pro-cont">
-                <h2 class="left-title">projects <span>Front-end Develop</span></h2>
+            <div class="contents">
+                <h2 class="left-title">projects</h2>
                 <div class="pro-visual">
                     <div class="swiper pro-slide">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide pro-box">Slide 1</div>
-                            <div class="swiper-slide pro-box">Slide 2</div>
-                            <div class="swiper-slide pro-box">Slide 3</div>
+                            <div class="swiper-slide pro-box"><span class="pro-info">개발중 입니다.</span></div>
+                            <div class="swiper-slide pro-box"><span class="pro-info">개발중 입니다.</span></div>
+                            <div class="swiper-slide pro-box"><span class="pro-info">개발중 입니다.</span></div>
                             <div class="swiper-slide pro-box"><span class="pro-info">개발중 입니다.</span></div>
                             <div class="swiper-slide pro-box"><span class="pro-info">개발중 입니다.</span></div>
                             <div class="swiper-slide pro-box"><span class="pro-info">개발중 입니다.</span></div>
                         </div>
                     </div>
-                    <div class="swiper-button-next btn-next"></div>
-                    <div class="swiper-button-prev btn-prev"></div>
-
-
-
+                    <div class="swiper-button-next" style="color: #999; right: 60px"></div>
+                    <div class="swiper-button-prev" style="color: #999; left: 60px"></div>
                 </div>
             </div>
         </div>
@@ -138,7 +135,28 @@
         <div class="scroll-text bk">Scroll</div>
         <div class="scroll-line bk"></div>
     </section>
+    <!--//projects-->
 
+    <section id="contact">
+        <div class="inner">
+            <div class="contents">
+                <h2 class="left-title">Contact</h2>
+                <div class="front-visual">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//contact-->
+
+    <footer id="footer">
+            <div class="footer-cont">
+                <span>상업적 목적이 아닌 개인용 포트폴리오 용도로 제작된 페이지 입니다.</span>
+                <p class="footer-text">
+                    Copyright &copy; 2022.SolHwi Kim All rights reserved.
+                </p>
+            </div>
+    </footer>
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

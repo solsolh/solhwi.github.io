@@ -2,15 +2,26 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
-
-html {font-size: 10px}
+/*common*/
+html {font-size: 10px; scroll-behavior: smooth; }
 body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; background: #F9F9F9}
-#wrap {width: 100%;height: 100vh; background: #333}
-.inner {
+#wrap {width: 100%;height: 100vh; background: #333; }
+.main-inner {
     background: #333333;
     width: 1450px;
     height: 100%;
     margin: 0 auto;
+}
+.inner {
+    background: #F9F9F9;
+    width: 1450px;
+    height: 100%;
+    margin: 0 auto;
+}
+.contents {
+    width: 100%;
+    height: 60rem;
+    padding: 14rem 0rem;
 }
 
 /*header*/
@@ -19,9 +30,30 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     width:100%;
     height: 80px;
     position: fixed;
+    top:0;
+    left:0;
     color: #fff;
     z-index: 999;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
 }
+#header::after.active {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+#header.active {
+    color: #fff;
+    background-color: rgba(0,0,0,.6);
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
 .header-inner {
     display: flex;
     justify-content: space-between;
@@ -46,6 +78,19 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     font-size: 2rem;
     padding: 0 5px;
 }
+#nav .nav-menu .menu > a{position: relative;}
+#nav .nav-menu .menu > a::after{
+    position:absolute;
+    bottom: -15px;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    border-bottom: 3px solid #ccc;
+    height: 1px;
+    transform: translateY(-15px);
+    opacity: 0; transition: all 0.5s;}
+#nav .nav-menu .menu > a:hover::after{opacity: 1; transform: translateY(-5px);}
 
 /*main*/
 #main {width: 100%; height: 100%; position: relative;}
@@ -74,15 +119,15 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
 }
 
 /*scroll*/
- .scroll-main {
+.scroll-main.wh {
     position: absolute; bottom: 8%; left: 50%;
-     transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 2rem;
     height: 3rem;
     border: 3px solid #fff;
     border-radius: 20px;
 }
-.scroll-ball {
+.scroll-ball.wh {
     position: absolute;
     bottom: 16px;
     left: 50%;
@@ -91,7 +136,7 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     height: 6px;
     background: #fff;
 }
-.scroll-text {
+.scroll-text.wh {
     position: absolute;
     bottom: 6%;
     left: 50%;
@@ -99,7 +144,7 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     color: #fff;
 }
 
-.scroll-line {
+.scroll-line.wh {
     position: absolute;
     bottom: -20px;
     left: 50%;
@@ -163,16 +208,7 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
 }
 
 /*aboutMe*/
-#aboutMe {width: 100%; height: 900px; position: relative;}
-#aboutMe > .inner {
-    background: #F9F9F9;
-}
-.about-cont {
-    width: 100%;
-    height: 60rem;
-    padding: 14rem 0rem;
-}
-
+#aboutMe {width: 100%; height: 920px; position: relative;}
 .left-title {
     display: inline-block;
     font-weight: bold;
@@ -226,21 +262,8 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     font-weight: normal;
 }
 
-/*projects*//*aboutMe*/
-#projects {width: 100%; height: 900px; position: relative;}
-#projects > .inner {
-    background: #F9F9F9;
-}
-.pro-cont > .left-title > span {
-    font-weight: normal;
-    font-size: 1.8rem;
-    margin-left: 0.5rem;
-}
-.pro-cont {
-    width: 100%;
-    height: 60rem;
-    padding: 14rem 0rem;
-}
+/*projects*/
+#projects {width: 100%; height: 920px; position: relative;}
 .pro-visual {
     margin: 7rem 0;
     width: 100%;
@@ -252,8 +275,10 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     margin: 0 auto;
 }
 .pro-box {
-    background: pink;
+    background: #e8e8e8;
     border-radius: 20px;
+    text-align: center;
+
 }
 
 .btn-next{
@@ -263,4 +288,22 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
 .btn-prev {
     left: 100px;
     right: auto;
+}
+
+/*contact*/
+#contact {width: 100%; height: 920px; position: relative;}
+.pro-visual {
+    margin: 7rem 0;
+    width: 100%;
+    height: 550px;
+}
+
+/*footer*/
+#footer {width: 100%; height: 70px; position: relative; background: #333;}
+#footer .footer-cont {
+    padding: 1.2rem 0;
+    text-align: center;
+    color: #fff;
+    opacity: 0.5;
+    font-size: 1.4rem;
 }
