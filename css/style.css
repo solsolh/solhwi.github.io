@@ -291,17 +291,51 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
 }
 
 /*contact*/
-#contact {width: 100%; height: 920px; position: relative;}
-.pro-visual {
-    margin: 7rem 0;
+#contact {width: 100%; height: 850px; position: relative;}
+
+.contact-visual{
+    margin: 8rem 0;
     width: 100%;
-    height: 550px;
+    height: 450px;
+    text-align: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
+}
+.contact-text {
+    padding-top: 10rem;
+}
+.contact-text > p {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+.contact-text > p > span {
+    border-bottom: 3px solid #333;
+}
+.contact-form {
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.contact-form > ul > li {
+    margin-bottom: 1rem;
+}
+
+.contact-form > ul .click {
+    transition: all 0.4s;
+}
+.contact-form > ul .click:hover {
+    display: inline-block;
+    background: #666;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.4s;
 }
 
 /*footer*/
 #footer {width: 100%; height: 70px; position: relative; background: #333;}
 #footer .footer-cont {
-    padding: 1.2rem 0;
+    padding: 1.4rem 0;
     text-align: center;
     color: #fff;
     opacity: 0.5;
