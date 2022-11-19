@@ -222,7 +222,7 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
 .about-img {
     margin: 7rem 0;
     width: 350px;
-    height: 450px;
+    height: 100%;
 }
 .about-img > img {
     width: 100%;
@@ -247,8 +247,11 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     padding-top: 2rem;
     display: inline-block;
 }
+.about-skills{
+    margin-top: 2rem;
+}
 .about-skills > ul {
-    margin: 0.5rem 1rem;
+    margin: 0.8rem 1rem;
 }
 .skill-box {
     margin-bottom: 1.4rem;
@@ -275,19 +278,67 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     margin: 0 auto;
 }
 .pro-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
     background: #e8e8e8;
     border-radius: 20px;
     text-align: center;
-
 }
 
-.btn-next{
+.pro-box > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.pro-info{
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 222;
+    width: 100%;
+    height: 45rem;
+    background: #333;
+    border-radius: 20px;
+    z-index: 222;
+    transition: all 0.4s;
+}
+.pro-box{
+    transition: all 0.4s;
+}
+.pro-box:hover .pro-info {
+    opacity: 0.9;
+}
+.cont-btn {
+    display: flex;
+    justify-content: space-evenly;
+    }
+.pro-cont {
+    color: #fff;
+    padding: 4rem 2rem;
+    font-size: 1.7rem;
+}
+.pro-cont .cont-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.pro-cont .cont-text > span {
+    display: block;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+}
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.btn:hover {
     color: #333;
-
-}
-.btn-prev {
-    left: 100px;
-    right: auto;
+    background: pink;
+    transition: all 0.4s;
 }
 
 /*contact*/
