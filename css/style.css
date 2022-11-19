@@ -182,7 +182,7 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
 
 .scroll-line.bk {
     position: absolute;
-    bottom: -20px;
+    bottom: -25px;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #333;
@@ -294,16 +294,20 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
 #contact {width: 100%; height: 850px; position: relative;}
 
 .contact-visual{
+    position: relative;
     margin: 8rem 0;
     width: 100%;
     height: 450px;
     text-align: center;
-    border: 2px solid #d9d9d9;
+    /*border: 2px solid #d9d9d9;*/
     border-radius: 20px;
+    background: rgba(217, 217, 217, 0.3);
 }
-.contact-text {
-    padding-top: 10rem;
+.contact-icon {
+    font-size: 4rem;
+    padding: 3rem 0;
 }
+
 .contact-text > p {
     font-size: 2.8rem;
     font-weight: 600;
@@ -322,13 +326,15 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
 }
 
 .contact-form > ul .click {
+    display: inline-block;
     transition: all 0.4s;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
 }
 .contact-form > ul .click:hover {
-    display: inline-block;
-    background: #666;
-    border-radius: 10px;
     color: #fff;
+    background: #555;
     transition: all 0.4s;
 }
 
@@ -340,4 +346,21 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     color: #fff;
     opacity: 0.5;
     font-size: 1.4rem;
+}
+/*top-ball*/
+#top-ball{
+    position: fixed;
+    bottom: 1.5%;
+    right: 1%;
+    z-index: 999;
+    text-align: center;
+    background: #d9d9d9;
+    color: #333;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+}
+#top-ball i {
+    padding-top: 0.2rem;
+    font-size: 2rem;
 }
