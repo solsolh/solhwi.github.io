@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시노펙스</title>
+    <link rel="stylesheet" href="css/synopex.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:700px)">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/synopex.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!--헤더 시작-->
+        <header id="main-header">
+            <div class="top-header clear">
+                <!--<div class="inner">-->
+                <div id="main-logo">
+                    <h1 class="logo"><a href="#" class="blind">시노펙스 마스크 스토어 바로가기<img src="img/logo_w_store.png" alt=""></a></h1>
+                </div>
+
+
+                <nav id="gnb">
+                    <div class="gnb-menu">
+                        <ul class="clear">
+                            <li>
+                                <a href="#">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="#">IT BUSINESS</a>
+                            </li>
+                            <li>
+                                <a href="#">Membrance/FilterBUSINESS</a>
+                            </li>
+                            <li>
+                                <a href="#">투자정보</a>
+                            </li>
+                            <li>
+                                <a href="#">홍보마당</a>
+                            </li>
+                            <li>
+                                <a href="#">윤리경영</a>
+                            </li>
+                            <li>
+                                <a href="#">인재경영</a>
+                            </li>
+                            <li>
+                                <a href="#">마스크</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!--sub-menu-->
+                <div class="sub-menu clear">
+                    <ul class="sub-2depth sub01">
+                        <li>
+                            <a href="subpage.html">개요</a>
+                        </li>
+                        <li>
+                            <a href="#">비전</a>
+                        </li>
+                        <li>
+                            <a href="#">경영이념</a>
+                        </li>
+                        <li>
+                            <a href="#">인사말</a>
+                        </li>
+                        <li>
+                            <a href="#">연혁</a>
+                        </li>
+                        <li>
+                            <a href="#">CI/BI</a>
+                        </li>
+                        <li>
+                            <a href="#">Biz네트워크</a>
+                        </li>
+                        <li>
+                            <a href="#">온라인문의</a>
+                        </li>
+                    </ul>
+                    <ul class="sub-2depth sub02">
+                        <li>
+                            <a href="#">FPCB</a>
+                        </li>
+                        <li>
+                            <a href="#">PBA</a>
+                        </li>
+                        <li>
+                            <a href="#">EMS</a>
+                        </li>
+                        <li>
+                            <a href="#">검사기</a>
+                        </li>
+                        <li>
+                            <a href="#">New Electronic</a>
+                        </li>
+                        <li>
+                            <a href="#">R&amp;B</a>
+                        </li>
+                    </ul>
+                    <ul class="sub-2depth sub03">
+                        <li>
+                            <a href="#">Filert Biz</a>
+                        </li>
+                        <li>
+                            <a href="#">Membrance</a>
+                        </li>
+                        <li>
+                            <a href="#">Mask Filter</a>
+                        </li>
+                        <li>
+                            <a href="#">Hydrogen&amp;Bio Biz</a>
+                        </li>
+                        <li>
+                            <a href="#">Water System Biz</a>
+                        </li>
+                        <li>
+                            <a href="#">R&amp;D</a>
+                        </li>
+                    </ul>
+                    <ul class="sub-2depth sub04">
+                        <li><a href="#">공시정보</a></li>
+                        <li><a href="#">공고사항</a></li>
+                        <li><a href="#">검사보고서</a></li>
+                        <li><a href="#">사업보고서</a></li>
+                        <li><a href="#">IR자료실</a></li>
+                    </ul>
+                    <ul class="sub-2depth sub05">
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">블로그</a></li>
+                        <li><a href="#">홍보영상</a></li>
+                        <li><a href="#">CSR</a></li>
+                    </ul>
+                    <ul class="sub-2depth sub06">
+                        <li><a href="#">윤리지침</a></li>
+                        <li><a href="#">윤리규범</a></li>
+                        <li><a href="#">상담실안내</a></li>
+                        <li><a href="#">제보하기</a></li>
+                    </ul>
+                    <ul class="sub-2depth sub07">
+                        <li><a href="#">인사제도</a></li>
+                        <li><a href="#">교육제도</a></li>
+                        <li><a href="#">복리후생</a></li>
+                        <li><a href="#">채용공고</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">지원하기</a></li>
+                    </ul>
+                    <ul class="sub-2depth sub08">
+                        <li><a href="#">시노텍스 공식몰</a></li>
+                        <li><a href="#">네이버 블로그</a></li>
+                        <li><a href="#">인스타그램</a></li>
+                        <li><a href="#">페이스북</a></li>
+                        <li><a href="#">유튜브채널</a></li>
+                    </ul>
+                </div>
+
+                <!--util-->
+                <div id="util">
+                    <ul class="clear">
+                        <li>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="menuBox">
+                                <i class="fas fa-th"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="langBox">ENG</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+        <!--//헤더 끝-->
+
+        <!--메인 시작-->
+        <div id="main">
+
+            <!--메인 비주얼 시작-->
+            <section id="mainVisual">
+                <div class="swiper-container mainSlide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide main01">
+                            <div class="slideText">
+                                <h2><span>고객의 생산성 향상</span>을 위한 <br> 끊임없는 <span>생각</span></h2>
+                                <p>시노펙스는 최고의 여과기술 시스템 개발을 위해 <br> 최선의 노력을 하고 있습니다. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main02">
+                            <div class="slideText">
+                                <h2><span>사람과 자연</span>을 최우선으로<br>생각하는 <span>기술혁신</span></h2>
+                                <p>시노펙스는 최고의 여과기술 시스템 개발을 위해 <br> 최선의 노력을 하고 있습니다. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main03">
+                            <div class="slideText">
+                                <h2>모두가 <span>안전하고 행복한</span><br><span>세상</span>을 그립니다.</h2>
+                                <p>시노펙스는 최고의 여과기술 시스템 개발을 위해<br>최선의 노력을 하고 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next main-next">
+                    </div>
+                    <div class="swiper-button-prev main-prev">
+                    </div>
+                    <!--<div class="swiper-pagination page-btn"></div>-->
+                </div>
+                <div class="scroll-down">
+                    <p>BUSINESS</p>
+                    <div class="scroll">
+                    </div>
+                </div>
+            </section>
+            <!--//메인비주얼 끝-->
+
+            <!--메인 콘텐츠 시작-->
+            <section id="mainContents">
+                <div class="inner clear">
+                    <div class="itCont">
+                        <div class="contTitle">
+                            <h3><span>IT</span> BUSINESS</h3>
+                            <p class="contText">One more step to promote the innovation width SYNOEPX</p>
+                            <div class="contImg">
+                                <img src="img/business_01.jpg" alt="IT BUSINESS">
+                            </div>
+                            <a href="#" class="btn-more">MORE</a>
+                        </div>
+
+                    </div>
+                    <div class="membraneCont">
+                        <div class="contTitle">
+                            <h3><span>Membrance <span class="small-text">/</span> Filter</span> BUSINESS</h3>
+                            <p class="contText">SYNOEPX Provides the Best Solution for Innovation of your Productivity</p>
+                            <div class="contImg">
+                                <img src="img/business_02.jpg" alt="Membrance / Filter BUSINESS">
+                            </div>
+                            <a href="#" class="btn-more">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-down">
+                    <p>NEWS</p>
+                    <div class="scroll">
+                    </div>
+                </div>
+            </section>
+            <!--//메인콘텐츠 끝-->
+
+            <section id="newsCont">
+                <div class="inner clear">
+                    <div class="news">
+                        <h3 class="blackTitle">
+                            NEWS
+                        </h3>
+                        <div class="newsSlide">
+                            <div class="swiper-container newsBox">
+                                <div class="swiper-wrapper slideConts">
+                                    <div class="swiper-slide newsSec">
+                                        <div class="newsList">
+                                            <a href="javascript:;">
+                                                <p class="newsName">
+                                                    시노펙스, 1,603억원 규모 공업용수 위탁운영사 계약 !
+                                                </p>
+                                                <p class="newsText">
+                                                    멤브레인 소재 및 필터 전문기업 시노펙스가 50조원 규모의 국내 물 산업시장에 물 공급 운영사로서 첫 계약을 체결했다. 3일 시노펙스는 울산 미포국가산업단지 맞춤형 공업용수 통합 공급사업 시행사인 울산하이텍워터와 30년간 총 1,603억원 규모의 하수재이용 관리운영위탁계약 및 73억원 규모의 UF 멤브레인 및 MBR(멤브레인을 이용한 생물학적 처리) 등 기자재 공급 계약을 체결했다고 밝혔다.
+                                                </p>
+                                                <time datetime="2021-08-03">2021.08.03</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide newsSec">
+                                        <div class="newsList">
+                                            <a href="javascript:;">
+                                                <p class="newsName">
+                                                    시노펙스, 한국상하수도협회 “단체표준제품”인증 획득 !
+                                                </p>
+                                                <p class="newsText">
+                                                    시노펙스 멤브레인 필터가 한국상하수도협회(KWWA)로부터 단체표준제품 인증을 획득했다.
+                                                    단체표준제품 인증은 상하수도관련 전문인증기관인 한국상하수도협회가 정수 시설의 안정성 확보 및 수질향상을 위해 시행하는 제도로 국내 일 5천톤 규모 이상의 정수 시설에는 단체표준 인증제품 사용이 의무화 되어있다. </p>
+                                                <time datetime="2021-07-06">2021.07.06</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide newsSec">
+                                        <div class="newsList">
+                                            <a href="javascript:;">
+                                                <p class="newsName">
+                                                    시노펙스, 인도네시아 찌아씀 정수장 가동 시작 !
+                                                </p>
+                                                <p class="newsText">
+                                                    시노펙스가 직접 운영하는 인도네시아 최초 PVDF 멤브레인 필터 방식의 찌아씀 정수장이 본격적인 상업 생산을 시작했다.
+                                                    시노펙스는 인도네시아 수방시에 위치한 찌아씀 정수장에서 인도네시아 수방시 수리아나(Suryana) 수도국장, 우장(Ujang) 부국장, 한국환경산업기술원(KEITI) 김순구 인도네시아 소장, 시노펙스 이정하 인도네시아 법인장 등 내외빈 30여명이 참석한 가운데 10일 준공식을 갖고 본격적인 정수장 가동을 시작했다고 밝혔다.
+                                                </p>
+                                                <time datetime="2021-06-11">2021.06.11</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide newsSec">
+                                        <div class="newsList">
+                                            <a href="javascript:;">
+                                                <p class="newsName">
+                                                    시노펙스, 아마존 입점, 미주 시장 진출 !
+                                                </p>
+                                                <p class="newsText">
+                                                    시노펙스는 인공혈관 소재로 사용되는 ePTFE를 필터로 적용한 “시노텍스” 마스크가 아마존 미국 마켓 플레이스에 입점했다고 밝혔다. 시노텍스 마스크는 시노펙스가 고어텍스 소재로 알려진 PTFE를 국산화하여 자체 개발한 연신(Expand) 기술을 적용한 ePTFE를 마스크 필터로 적용한 제품이다. 시노텍스 마스크는 세계최초로 ePTFE 필터에 △ 새부리형 입체 디자인, △ 탄성 소재 귀끈을 적용한 제품으로 장시간 착용해도 귀에 통증이 없으며, 숨쉬기 편한 것이 특징이다.
+                                                </p>
+                                                <time datetime="2021-05-21">2021.05.21</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide newsSec">
+                                        <div class="newsList">
+                                            <a href="javascript:;">
+                                                <p class="newsName">
+                                                    시노펙스, 1분기 매출 500억원, 흑자 전환 !
+                                                </p>
+                                                <p class="newsText">
+                                                    시노펙스가 통해 2021년 1분기 연결기준 매출액 500억 3천만원과 당기 순이익 11억5천만원을 기록 했다고 공시했다.
+                                                    이는 지난 4분기 대비 매출액은 8.8% 성장 했으며, 당기 순이익은 전분기 약 61억원 적자에서 11억5천만원의 흑자로 전환한 것이다.
+                                                    시노펙스는 지난해 코로나19에 따른 세계 경기 둔화와 사업고도화를 위한 FPCB로 사업전환을 위해 베트남 비나2 합병 등에 따른 비용발생에 의해 적자를 기록 했지만 1분기 만에 흑자로 전환하는데 성공했다고 밝혔다.
+                                                </p>
+                                                <time datetime="2021-05-14">2021.05.14</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide newsSec">
+                                        <div class="newsList">
+                                            <a href="javascript:;">
+                                                <p class="newsName">
+
+                                                    시노텍스, 가정의 달 “가족 샘플 증정” 이벤트!
+                                                </p>
+                                                <p class="newsText">
+                                                    시노펙스 ePTFE 소재를 마스크용 필터로 적용한 “시노텍스” 마스크를 무료로 사용해 볼 수 있는 이벤트가 진행된다.
+                                                    시노텍스는 가정의 달을 맞아 가족용 체험 샘플을 증정하는 이벤트를 진행한다고 밝혔다. 이번 행사는 5월 10일부터 31일까지로 가족 체험 셋트를 100원에 판매하며, 판매금액은 전액 기부 할 예정이다.가족 체험 셋트는 xS사이즈 화이트콜라보, S사이즈 블랙, M사이즈 그레이,L사이즈 화이트 각 1장씩 총 4장으로 구성되며, 시노텍스가 생산하는 모든 사이즈 제품과 색상을 착용해 볼 수 있게 구성되어 있다.
+                                                </p>
+                                                <time datetime="2021-05-10">2021.05.10</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide newsSec">
+                                        <div class="newsList">
+                                            <a href="javascript:;">
+                                                <p class="newsName">
+                                                    시노펙스, 유럽 CE <br> B모듈인증!
+                                                </p>
+                                                <p class="newsText">
+                                                    9일 시노펙스는 “시노텍스 마스크”에 대하여 유럽 CE B모듈 인증서를 받았다고 밝혔다. 이에 앞서 시노텍스 마스크는 지난 1월 유럽 CE인증을 위한 FFP2 성능 테스트를 통과했으며, 이번 B모듈 인증은 마스크의 구조 소재 등에 대한 적합성을 인증 받은 것이다.
+                                                    유럽 CE의 B모듈은 3개 등급으로 나누어 지며 1등급, 2등급, 3등급으로 구분 된다.시노텍스 마스크 제품의 등급은 B모듈 2등급으로 제품의 구조, 소재, 생산공장에 대한 평가를 통해 인증을 받은 것이다.
+                                                </p>
+                                                <time datetime="2021-04-09">2021.04.09</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide newsSec">
+                                        <div class="newsList">
+                                            <a href="javascript:;">
+                                                <p class="newsName">
+                                                    시노펙스, 5G 통신용 고주파 PTFE
+                                                    케이블 개발!
+                                                </p>
+                                                <p class="newsText">
+                                                    5G 통신 시장의 성장으로 통신 시스템의 핵심 부품인 고주파 케이블제품의 국산화 경쟁이 치열한 가운데 시노펙스가 고주파용 케이블 국산화에 성공했다. 시노펙스는 수입에 의존하고 있는 전파속도 75%의 고사양 고주파 PTFE 케이블 국산화에 성공, 국내 시장 공급 및 일본과 유럽 수출을 시작했다고 밝혔다.
+                                                </p>
+                                                <time datetime="2021-04-06">2021.04.06</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                             
+                    </div>
+                   <div class="swiper-button-next NextNews-btn">
+                    </div>
+                    <div class="swiper-button-prev PrevNews-btn"></div>
+                        </div>
+                    <div class="scroll-down scrollGray">
+                        <p>PRODUCTS</p>
+                        <div class="scroll">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--//뉴스 끝-->
+
+            <!--PRODUCTS시작-->
+            <section id="ProductCont">
+                <div class="inner">
+                    <div class="product">
+                        <h3 class="blackTitle">
+                            PRODUCTS
+                        </h3>
+                        <p>세계 최고를 향한 열정으로 내일을 설계합니다.</p>
+                        <div class="productSlide">
+                            <div class="swiper-container productBox">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide proImg">
+                                        <a href="javascript:;" class="proGroup">
+                                            <div class="productList01">
+                                                <img src="img/m_m.jpg" alt="Membrane">
+                                            </div>
+                                            <div class="proText">
+                                                    <p>Membrane</p>
+                                                    <div class="proMore-btn">MORE</div>
+                                                </div> </a>
+                                    </div>
+                                    <div class="swiper-slide proImg">
+                                        <a href="javascript:;" class="proGroup">
+                                            <div class="productList02">
+                                               <img src="img/main_f.jpg" alt="Filter Biz">
+                                                </div>
+                                                <div class="proText">
+                                                    <p>Filter Biz</p>
+                                                    <div class="proMore-btn">MORE</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide proImg">
+                                        <a href="javascript:;" class="proGroup">
+                                            <div class="productList03">
+                                               <img src="img/m_w.jpg" alt=" Water system biz">
+                                               </div>
+                                                <div class="proText">
+                                                    <p>Water system biz</p>
+                                                    <div class="proMore-btn">MORE</div>
+                                                </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide proImg">
+                                        <a href="javascript:;" class="proGroup">
+                                            <div class="productList04">
+                                               <img src="img/m_e1.jpg" alt=" Hydrogen & Bio Biz">
+                                               </div>
+                                                <div class="proText">
+                                                  
+                                                    <p>Hydrogen &amp; Bio Biz</p>
+                                                    <div class="proMore-btn">MORE</div>
+                                                 </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide proImg">
+                                        <a href="javascript:;" class="proGroup">
+                                            <div class="productList05">
+                                               <img src="img/m_c1.jpg" alt="FPCB">
+                                                </div>
+                                                <div class="proText">
+                                                    <p>FPCB</p>
+                                                    <div class="proMore-btn">MORE</div>
+                                                </div>  
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide proImg">
+                                        <a href="javascript:;" class="proGroup">
+                                            <div class="productList06">
+                                               <img src="img/m_t.jpg" alt="NEW Electronic parts">
+                                                </div>
+                                                <div class="proText">
+                                                    <p>NEW Electronic parts</p>
+                                                <div class="proMore-btn">MORE</div>
+                                                 </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next NextPro-btn"></div>
+                    <div class="swiper-button-prev prevPro-btn"></div>
+                        <div class="mall-btn">
+                            <a href="javascript:;">시노텍스 공식몰</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="scroll-down scrollGray">
+                        <p>SERVICE</p>
+                        <div class="scroll">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--//products 끝-->
+
+            <!--SERVICE 시작-->
+            <section id="serviceCont">
+                <div class="inner">
+                    <div class="service">
+                        <h3 class="blackTitle">
+                            SERVICE
+                        </h3>
+                        <div class="serviceList clear">
+                            <div class="serviceBox">
+                                <div class="service-border">
+                                    <a href="javascript:;">
+                                        <div class="circle">
+                                            <div class="serviceImg">
+                                                <p class="icon">
+                                                    <img src="img/service_icon_01.png" alt="제보접수">
+                                                    <span>제보접수</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="serviceBox">
+                                <div class="service-border">
+                                    <a href="javascript:;">
+                                        <div class="circle">
+                                            <div class="serviceImg">
+                                                <p class="icon">
+                                                    <img src="img/service_icon_02.png" alt="공시정보">
+                                                    <span>공시정보</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="serviceBox">
+                                <div class="service-border">
+                                    <a href="javascript:;">
+                                        <div class="circle">
+                                            <div class="serviceImg">
+                                                <p class="icon">
+                                                    <img src="img/service_icon_03.png" alt="감사보고서">
+                                                    <span>감사보고서</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="serviceBox">
+                                <div class="service-border">
+                                    <a href="javascript:;">
+                                        <div class="circle">
+                                            <div class="serviceImg">
+                                                <p class="icon">
+                                                    <img src="img/service_icon_04.png" alt="보도자료">
+                                                    <span>보도자료</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="serviceBox">
+                                <div class="service-border">
+                                    <a href="javascript:;">
+                                        <div class="circle">
+                                            <div class="serviceImg">
+                                                <p class="icon">
+                                                    <img src="img/service_icon_05.png" alt="인사제도">
+                                                    <span>인사제도</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="serviceBox">
+                                <div class="service-border">
+                                    <a href="javascript:;">
+                                        <div class="circle">
+                                            <div class="serviceImg">
+                                                <p class="icon">
+                                                    <img src="img/service_icon_06.png" alt="채용공고">
+                                                    <span>채용공고</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--footer 시작-->
+        <footer>
+            <div id="f-box">
+                <div class="f-logo">
+                    <a href="index.html" class="blind">시노펙스 로고</a>
+                </div>
+                <div class="f-sns">
+                    <ul class="clear">
+                        <li>
+                            <a href="javascript:;"><img src="img/sns_icon_01.png" alt="페이스북"></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/sns_icon_02.png" alt="인스타그램"></a>
+                        </li>
+                        <li class="about">
+                            <a href="javascript:;">
+                                ABOUT SYNOPEX
+                                <img src="img/icon_down.png" alt="시노펙스에 관한 문서 다운로드">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-list">
+                    <ul class="clear">
+                        <li>
+                            <a href="javascript:;">개인정보 취급방침</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">이메일무단수집거부</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">온라인문의</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-address">
+                    <ul class="clear">
+                        <li>
+                            <a href="javascript:;">경기도 화성시 동탄하나1길 54-42</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">TEL : 031-379-7777</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">TEL : 031-379-7777</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-copy">
+                    <p>Copyrights @2020 Synopex.All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="scroll-btn">
+        <img src="img/top_btn.png" alt="맨 위로 올라가는 버튼">
+    </div>
+
+
+</body></html>
