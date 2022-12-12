@@ -92,7 +92,20 @@ body {font-size: 1.5rem;font-family: Noto sans KR, sans-serif; color: #333; back
     opacity: 0; transition: all 0.5s;}
 #nav .nav-menu .menu > a:hover::after{opacity: 1; transform: translateY(-5px);}
 
-/*main*/
+#sub-nav {
+    position: absolute;
+    bottom: 0%;
+    right: 20rem;
+}
+#sub-nav .sub-menu {
+    text-align: center;
+    font-size: 1.8rem;
+}
+#sub-nav .sub-menu {
+
+}
+
+    /*main*/
 #main {width: 100%; height: 100%; position: relative;}
 .main-cont {color: #fff; position: absolute; top: 40%;}
 .main-title {font-family: 'Alfa Slab One', cursive; font-size: 8rem;}
