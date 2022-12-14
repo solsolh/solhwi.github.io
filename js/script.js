@@ -10,6 +10,22 @@ document.addEventListener('scroll', () => {
     }
 });
 
+//2depth 메뉴 스크롤
+const depth = document.querySelector('#sub-nav');
+const depthHeight = depth.getBoundingClientRect().height;
+
+document.addEventListener('scroll', () => {
+    if (window.scrollY > depthHeight) {
+        depth.classList.add('act');
+    } else {
+        depth.classList.remove('act');
+    }
+});
+
+//2depth 메뉴 display: block
+
+
+
 //타이핑
 var typingBool = false;
 var typingIdx=0;
