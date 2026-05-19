@@ -1,4 +1,4 @@
-<h1>김솔휘 포트폴리오 작업물</h1>
+<h1>OOO 포트폴리오 작업물</h1>
 
 <ol>
 <li>기술 : HTML, CSS, javascript, jquery 사용</li>
